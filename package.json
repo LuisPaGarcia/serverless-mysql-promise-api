@@ -1,0 +1,16 @@
+{
+  "name": "lambda-sgrcoed",
+  "version": "1.0.0",
+  "description": "Grupo de APIs para aplicación de SGRCOED.com",
+  "main": "handler.js",
+  "scripts": {
+    "deploy": "serverless deploy",
+    "": ""
+  },
+  "author": "Pauly Garcia <diganluispa@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "promise-mysql": "^3.1.3"
+  }
+}

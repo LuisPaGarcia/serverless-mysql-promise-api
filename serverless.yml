@@ -1,0 +1,23 @@
+service: sgrcoed
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  profile: serverlessSGRCOED
+
+functions:
+  getDepartamentos:
+    handler: handler.getDepartamentos
+    events:
+      - http:
+          path: get/getDepartamentos
+          method: get
+          cors: true
+
+  helloWorld:
+    handler: handler.helloWorld
+    events:
+      - http:
+          path: get/helloWorld
+          method: get
+          cors: true
